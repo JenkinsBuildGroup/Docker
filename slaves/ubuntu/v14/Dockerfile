@@ -43,7 +43,7 @@ RUN apt-get -y install sudo
 RUN echo 'jenkins ALL=(root) NOPASSWD: ALL' >> /etc/sudoers
 
 # Install JRE necessary for Jenkins slave connection
-RUN apt-get -y install openjdk-7-jre-headless
+RUN apt-get -y install default-jre-headless
 
 # Standard SSH port
 EXPOSE 22
